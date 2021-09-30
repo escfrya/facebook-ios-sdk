@@ -158,7 +158,7 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("Internal"),
                 .headerSearchPath("../../FBSDKCoreKit/FBSDKCoreKit/Internal"),
-                .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS], configuration: nil))
+                .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS, .macCatalyst], configuration: nil))
             ],
             swiftSettings: [
                 .define("FBSDK_SWIFT_PACKAGE")
@@ -186,7 +186,7 @@ let package = Package(
             cSettings: [
                 .headerSearchPath("Internal"),
                 .headerSearchPath("../../FBSDKCoreKit/FBSDKCoreKit/Internal"),
-              .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS], configuration: nil))
+              .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS, .macCatalyst], configuration: nil))
             ]
         ),
 
@@ -212,7 +212,7 @@ let package = Package(
                 .headerSearchPath("Internal"),
                 .headerSearchPath("../../FBSDKCoreKit/FBSDKCoreKit/Internal"),
                 .headerSearchPath("../../FBSDKShareKit/FBSDKShareKit/Internal"),
-                .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS], configuration: nil))
+                .define("FBSDK_SWIFT_PACKAGE", to: nil, .when(platforms: [.iOS, .macOS, .tvOS, .macCatalyst], configuration: nil))
             ]
         ),
 
